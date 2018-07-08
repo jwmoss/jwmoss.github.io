@@ -4,6 +4,7 @@ title:  "Creating and Deploying VM Templates with Packer and Powershell"
 date:   2018-07-07
 author: Jonathan Moss
 permalink: blog/automating-template-builds-with-packer.html
+tags: powershell packer vcenter
 ---
 
 I stumbled upon an issue at work which allowed for an opportunity to build virtual machine (VM) templates within vCenter. I wanted to find a way to automate the process because there are lots of ways to screw up a VM template, and if you screw it up in the beginning, the issue(s) will be present through the lifecycle of the Server. No fun!
