@@ -52,7 +52,7 @@ I continued developing scripts to deploy a virtual machine in our environment an
 
 ## Recap
 
-To recapp, here's a few highlights of my journey and observations that I've made in the last 2 years:
+To recap, here's a few highlights of my journey and observations that I've made in the last 2 years:
 
 - I'm nowhere close to "running with Powershell" but I intend to keep using Powershell to automate what I can.
 - I've used Powershell almost daily at work for the last 2 years to automate business "tasks" and produce reports (mostly for myself or my team)

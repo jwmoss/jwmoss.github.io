@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>My Powershell Journey | Your awesome title</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="My Powershell Journey" />
+<meta name="author" content="Jonathan Moss" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="My Powershell Journey" />
+<meta property="og:description" content="My Powershell Journey" />
+<link rel="canonical" href="http://localhost:4000/blog/my-powershell-journey.html" />
+<meta property="og:url" content="http://localhost:4000/blog/my-powershell-journey.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-10-01T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="My Powershell Journey" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jonathan Moss"},"dateModified":"2018-10-01T00:00:00-04:00","datePublished":"2018-10-01T00:00:00-04:00","description":"My Powershell Journey","headline":"My Powershell Journey","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/my-powershell-journey.html"},"url":"http://localhost:4000/blog/my-powershell-journey.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">My Powershell Journey</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2018-10-01T00:00:00-04:00" itemprop="datePublished">
+        Oct 1, 2018
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Jonathan Moss</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="my-powershell-journey">My Powershell Journey</h1>
+
+<p>I’ve met a handful of folks who, when I talk to them about automating the boring stuff, they tend to shrug it off and say “I don’t have time” or “I’m not a developer”. This blog is for you (or if you want to know my journey of how I changed my career by learning Powershell).</p>
+
+<p>I’ve been in IT for over 5 years, and have specifically been using Powershell at work for the last 3 years, and meaningfully in the last 2 years.</p>
+
+<h2 id="a-powershell-noob">A Powershell Noob</h2>
+
+<p>Two years ago, I was using powershell to run a handful of “one-liners”. Such as:</p>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Get-ADUser</span><span class="w"> </span><span class="nt">-Identity</span><span class="w"> </span><span class="nx">jmoss</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Which returned some interesting data. With this in mind, I would simply find the data I’m looking for, and paste it into notepad or an email to my boss. What I didn’t realize was this concept that <strong>properties should be treated as objects.</strong></p>
+
+<p>Once I realized that most of what I write in Powershell can be treated as an object, a light-bulb clicked. This happend about a year and a half ago, in early 2017. It was then where I realized that I had approached Powershell all wrong. It wasn’t just another prompt to view an IP Address or list a phone number of an Active Directory user, it was the glue to automating everything I need and exporting it to anything I want.</p>
+
+<p>It was at this point when I started to really kick it into high gear and force myself to use Powershell daily, and not just to get information randomly.</p>
+
+<h2 id="walking-with-powershell">Walking with Powershell</h2>
+
+<p>At an old company I used to work for, our IT department would receive html files from a vendor that included a bunch of tables with data in them, which needed to be exported to a txt file and <em>finally</em> imported into a SQL Server. The vendor had been sending us data in this format because their ERP only allowed for that (what year is it?!!??!?).</p>
+
+<p>Our IT department was spending 1.5 hours <em>a day</em> parsing this data manually. There was clearly a problem that could be resolved with Powershell.</p>
+
+<p>I used Powershell to parse the data in these HTML files using <a href="https://github.com/dfinke/ImportExcel">ImportExcel</a>’s <code class="language-plaintext highlighter-rouge">Get-HTMLTable</code> cmdlet, grab the data, store it in variables, and then export to a TXT file using <code class="language-plaintext highlighter-rouge">Out-File</code> to a fileshare.</p>
+
+<p>When all was said and done, I ended up creating a 50-60 line script that saved our department about 10 hours a week in manual work that was otherwise deemed “too difficult” to automate.</p>
+
+<p>As far as I know, this code is still being used in production.</p>
+
+<p>It was <em>ugly</em> code, but it worked, and gave me a ton of insight in how to use <a href="https://kevinmarquette.github.io/2016-10-28-powershell-everything-you-wanted-to-know-about-pscustomobject/">PSCustomobject</a>’s and using Git to ensure my code was versioned-controlled.</p>
+
+<h2 id="crawling-with-powershell">Crawling with Powershell</h2>
+
+<p>Around the time, I continued to learn more and more about Powershell by attempting to automate other things at work, developed a git repository with VSTS and integrated it into VS Code, shared that code with a co-worker, and encouraged my co-worker to develop his own script and add it to the collection.</p>
+
+<p>I continued developing scripts to deploy a virtual machine in our environment and copy files to 60 physical servers.</p>
+
+<h2 id="running-with-powershell">Running with Powershell</h2>
+
+<p><em>to be continued</em></p>
+
+<h2 id="recap">Recap</h2>
+
+<p>To recap, here’s a few highlights of my journey and observations that I’ve made in the last 2 years:</p>
+
+<ul>
+  <li>I’m nowhere close to “running with Powershell” but I intend to keep using Powershell to automate what I can.</li>
+  <li>I’ve used Powershell almost daily at work for the last 2 years to automate business “tasks” and produce reports (mostly for myself or my team)</li>
+  <li>Companies are hiring people who know Powershell. I’ve nearly doubled my Salary since first being exposed to Powershell about 3 years ago.</li>
+  <li>Powershell can now be used on macOS, Linux, and Windows + it’s open-sourced, meaning it will continue to get better.</li>
+  <li>Every software service that Microsoft publishes (AD, DNS, DHCP, Azure, O365, Sharepoint, etc) can be managed/automated using Powershell (and Powershell Core!).</li>
+</ul>
+
+<p>Overall, don’t be afraid to just dive in and start solving a <em>real</em> problem at work with Powershell, and not just simply learn about the concepts (which is also extremely important).</p>
+
+<p>Here are some ways to jump in and start growing in your career using Powershell:</p>
+
+<ul>
+  <li>Join the <a href="http://slack.poshcode.org/">Powershell Slack</a> and read what others are doing with it.</li>
+  <li>Go on <a href="https://github.com/trending/powershell">Github</a> and see what others are doing with Powershell.</li>
+  <li>Go to the <a href="https://www.reddit.com/r/powershell">Powershell</a> subreddit and read the posts where people talk about what they’ve done with Powershell each month (link <a href="https://old.reddit.com/r/PowerShell/search?q=what+have+you+done&amp;restrict_sr=on&amp;sort=relevance&amp;t=all">here</a>).</li>
+</ul>
+
+  </div><a class="u-url" href="/blog/my-powershell-journey.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">GitHub User</li>
+          <li><a class="u-email" href="mailto:your-email@domain.com">your-email@domain.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/jwmoss" target="_blank" title="jwmoss"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/jwmoss" target="_blank" title="jwmoss"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
